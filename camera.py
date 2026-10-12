@@ -2,7 +2,7 @@ import cv2
 from easytello import tello
 
 drone = tello.Tello()
-
+drone.takeoff()
 drone.streamon()
 
 cap = cv2.VideoCapture("") # fill this out with the ip addr of video stream fom tello
